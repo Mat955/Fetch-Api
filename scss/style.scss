@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #E1BEE7, #B2EBF2);
+    min-height: 100vh;
+}
+
+h1 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    line-height: .75;
+    margin: 40px;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .quote {
+        padding: 20px;
+        margin: 20px;
+        border: 2px dotted #FFD574;
+        font-family: 'Pacifico', cursive;
+    }
+
+    .author {
+        padding: 20px;
+        border: 1px dotted #a0bc5d;
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+
+    .trigger {
+        text-transform: uppercase;
+        font-size: 1.1em;
+        letter-spacing: 0.2em;
+        margin: 20px;
+        padding: 20px;
+        height: 50px;
+        width: 280px;
+        border: 0;
+        border-radius: 5px;
+        background-image: linear-gradient(to right, #E040FB, #00BCD4);
+        background-size: 150% 150%;
+        box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
+        transition: all 0.4s ease;
+
+        &:hover {
+            animation: gradient 2s ease infinite;
+        }
+    }
+
+    .tweet {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 20px 100px;
+        border: 2px solid #aef1ff;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

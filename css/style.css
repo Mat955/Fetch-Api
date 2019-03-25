@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#E1BEE7), to(#B2EBF2));
+  background-image: linear-gradient(to bottom right, #E1BEE7, #B2EBF2);
+  min-height: 100vh;
+}
+
+h1 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  line-height: .75;
+  margin: 40px;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box .quote {
+  padding: 20px;
+  margin: 20px;
+  border: 2px dotted #FFD574;
+  font-family: 'Pacifico', cursive;
+}
+
+.box .author {
+  padding: 20px;
+  border: 1px dotted #a0bc5d;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0;
+}
+
+.buttons .trigger {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
+  margin: 20px;
+  padding: 20px;
+  height: 50px;
+  width: 280px;
+  border: 0;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#E040FB), to(#00BCD4));
+  background-image: linear-gradient(to right, #E040FB, #00BCD4);
+  background-size: 150% 150%;
+  -webkit-box-shadow: 0 4px 12px 0 #98a0b4;
+          box-shadow: 0 4px 12px 0 #98a0b4;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.buttons .trigger:hover {
+  -webkit-animation: gradient 2s ease infinite;
+          animation: gradient 2s ease infinite;
+}
+
+.buttons .tweet {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px 100px;
+  border: 2px solid #aef1ff;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
